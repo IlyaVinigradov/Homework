@@ -11,3 +11,18 @@ Hello World!@#%
 4
 hello world
 """
+
+user_input = input().lower()
+count = 0
+
+count += user_input.count('!')
+user_input = user_input.replace('!', '')
+count += user_input.count('%')
+user_input = user_input.replace('%', '')
+count += user_input.count('#')
+user_input = user_input.replace('#', '')
+count += user_input.count('@')
+user_input = user_input.replace('@', '')
+
+print(count)
+print(user_input)
